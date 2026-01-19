@@ -1,0 +1,2681 @@
+{
+    "Url": "england_epl/2015-2016/2015-08-29_-_17-00_Liverpool_0_-_3_West_Ham/2_ResNET_TF2_PCA512",
+    "predictions": [
+        {
+            "gameTime": "00:23",
+            "label": "Goal",
+            "position": 23000,
+            "confidence": 0.10372920334339142
+        },
+        {
+            "gameTime": "00:52",
+            "label": "Kick-off",
+            "position": 52000,
+            "confidence": 0.4479430615901947
+        },
+        {
+            "gameTime": "01:02",
+            "label": "Goal",
+            "position": 62000,
+            "confidence": 0.3269593417644501
+        },
+        {
+            "gameTime": "01:08",
+            "label": "Kick-off",
+            "position": 68000,
+            "confidence": 0.44472530484199524
+        },
+        {
+            "gameTime": "01:21",
+            "label": "Goal",
+            "position": 81000,
+            "confidence": 0.1500394195318222
+        },
+        {
+            "gameTime": "01:38",
+            "label": "Goal",
+            "position": 98000,
+            "confidence": 0.2573874890804291
+        },
+        {
+            "gameTime": "01:58",
+            "label": "Goal",
+            "position": 118000,
+            "confidence": 0.22320839762687683
+        },
+        {
+            "gameTime": "02:14",
+            "label": "Kick-off",
+            "position": 134000,
+            "confidence": 0.39830055832862854
+        },
+        {
+            "gameTime": "02:16",
+            "label": "Goal",
+            "position": 136000,
+            "confidence": 0.3169352412223816
+        },
+        {
+            "gameTime": "02:32",
+            "label": "Kick-off",
+            "position": 152000,
+            "confidence": 0.3300521969795227
+        },
+        {
+            "gameTime": "02:42",
+            "label": "Goal",
+            "position": 162000,
+            "confidence": 0.30162474513053894
+        },
+        {
+            "gameTime": "02:53",
+            "label": "Goal",
+            "position": 173000,
+            "confidence": 0.013363015837967396
+        },
+        {
+            "gameTime": "03:04",
+            "label": "Goal",
+            "position": 184000,
+            "confidence": 0.12914273142814636
+        },
+        {
+            "gameTime": "03:24",
+            "label": "Goal",
+            "position": 204000,
+            "confidence": 0.21388471126556396
+        },
+        {
+            "gameTime": "03:34",
+            "label": "Goal",
+            "position": 214000,
+            "confidence": 0.1366715133190155
+        },
+        {
+            "gameTime": "03:38",
+            "label": "Kick-off",
+            "position": 218000,
+            "confidence": 0.3354768753051758
+        },
+        {
+            "gameTime": "03:56",
+            "label": "Kick-off",
+            "position": 236000,
+            "confidence": 0.12194539606571198
+        },
+        {
+            "gameTime": "03:56",
+            "label": "Goal",
+            "position": 236000,
+            "confidence": 0.11487221717834473
+        },
+        {
+            "gameTime": "04:08",
+            "label": "Kick-off",
+            "position": 248000,
+            "confidence": 0.12506051361560822
+        },
+        {
+            "gameTime": "04:32",
+            "label": "Goal",
+            "position": 272000,
+            "confidence": 0.20101536810398102
+        },
+        {
+            "gameTime": "04:47",
+            "label": "Goal",
+            "position": 287000,
+            "confidence": 0.5405158996582031
+        },
+        {
+            "gameTime": "05:15",
+            "label": "Kick-off",
+            "position": 315000,
+            "confidence": 0.45071080327033997
+        },
+        {
+            "gameTime": "05:21",
+            "label": "Goal",
+            "position": 321000,
+            "confidence": 0.24635018408298492
+        },
+        {
+            "gameTime": "05:26",
+            "label": "Kick-off",
+            "position": 326000,
+            "confidence": 0.14402148127555847
+        },
+        {
+            "gameTime": "05:48",
+            "label": "Goal",
+            "position": 348000,
+            "confidence": 0.25546103715896606
+        },
+        {
+            "gameTime": "06:01",
+            "label": "Goal",
+            "position": 361000,
+            "confidence": 0.31554654240608215
+        },
+        {
+            "gameTime": "06:21",
+            "label": "Kick-off",
+            "position": 381000,
+            "confidence": 0.33241742849349976
+        },
+        {
+            "gameTime": "06:33",
+            "label": "Kick-off",
+            "position": 393000,
+            "confidence": 0.40872833132743835
+        },
+        {
+            "gameTime": "07:00",
+            "label": "Kick-off",
+            "position": 420000,
+            "confidence": 0.00030956987757235765
+        },
+        {
+            "gameTime": "07:14",
+            "label": "Goal",
+            "position": 434000,
+            "confidence": 0.025313517078757286
+        },
+        {
+            "gameTime": "07:34",
+            "label": "Kick-off",
+            "position": 454000,
+            "confidence": 0.019707977771759033
+        },
+        {
+            "gameTime": "07:35",
+            "label": "Goal",
+            "position": 455000,
+            "confidence": 0.04989099130034447
+        },
+        {
+            "gameTime": "07:49",
+            "label": "Kick-off",
+            "position": 469000,
+            "confidence": 0.059896551072597504
+        },
+        {
+            "gameTime": "07:51",
+            "label": "Goal",
+            "position": 471000,
+            "confidence": 0.06272516399621964
+        },
+        {
+            "gameTime": "08:02",
+            "label": "Goal",
+            "position": 482000,
+            "confidence": 0.025158386677503586
+        },
+        {
+            "gameTime": "08:12",
+            "label": "Kick-off",
+            "position": 492000,
+            "confidence": 0.0032793290447443724
+        },
+        {
+            "gameTime": "08:35",
+            "label": "Goal",
+            "position": 515000,
+            "confidence": 0.12849369645118713
+        },
+        {
+            "gameTime": "08:46",
+            "label": "Goal",
+            "position": 526000,
+            "confidence": 0.11131460219621658
+        },
+        {
+            "gameTime": "09:07",
+            "label": "Kick-off",
+            "position": 547000,
+            "confidence": 0.0975707471370697
+        },
+        {
+            "gameTime": "09:31",
+            "label": "Kick-off",
+            "position": 571000,
+            "confidence": 0.23720970749855042
+        },
+        {
+            "gameTime": "09:48",
+            "label": "Goal",
+            "position": 588000,
+            "confidence": 0.21069061756134033
+        },
+        {
+            "gameTime": "10:12",
+            "label": "Goal",
+            "position": 612000,
+            "confidence": 0.12611302733421326
+        },
+        {
+            "gameTime": "10:27",
+            "label": "Goal",
+            "position": 627000,
+            "confidence": 0.0723796859383583
+        },
+        {
+            "gameTime": "10:31",
+            "label": "Kick-off",
+            "position": 631000,
+            "confidence": 0.13699977099895477
+        },
+        {
+            "gameTime": "10:44",
+            "label": "Kick-off",
+            "position": 644000,
+            "confidence": 0.5091052055358887
+        },
+        {
+            "gameTime": "11:05",
+            "label": "Goal",
+            "position": 665000,
+            "confidence": 0.005973451305180788
+        },
+        {
+            "gameTime": "11:19",
+            "label": "Goal",
+            "position": 679000,
+            "confidence": 0.1393403559923172
+        },
+        {
+            "gameTime": "11:30",
+            "label": "Goal",
+            "position": 690000,
+            "confidence": 0.18919163942337036
+        },
+        {
+            "gameTime": "11:43",
+            "label": "Goal",
+            "position": 703000,
+            "confidence": 0.172477126121521
+        },
+        {
+            "gameTime": "12:13",
+            "label": "Kick-off",
+            "position": 733000,
+            "confidence": 0.14602969586849213
+        },
+        {
+            "gameTime": "12:26",
+            "label": "Kick-off",
+            "position": 746000,
+            "confidence": 0.00033694508601911366
+        },
+        {
+            "gameTime": "12:38",
+            "label": "Kick-off",
+            "position": 758000,
+            "confidence": 0.03989733010530472
+        },
+        {
+            "gameTime": "12:38",
+            "label": "Goal",
+            "position": 758000,
+            "confidence": 0.04826847091317177
+        },
+        {
+            "gameTime": "12:49",
+            "label": "Goal",
+            "position": 769000,
+            "confidence": 0.1951012760400772
+        },
+        {
+            "gameTime": "13:03",
+            "label": "Goal",
+            "position": 783000,
+            "confidence": 0.12855057418346405
+        },
+        {
+            "gameTime": "13:17",
+            "label": "Kick-off",
+            "position": 797000,
+            "confidence": 0.059885237365961075
+        },
+        {
+            "gameTime": "13:25",
+            "label": "Goal",
+            "position": 805000,
+            "confidence": 0.09488601237535477
+        },
+        {
+            "gameTime": "13:37",
+            "label": "Kick-off",
+            "position": 817000,
+            "confidence": 0.007718230132013559
+        },
+        {
+            "gameTime": "13:40",
+            "label": "Goal",
+            "position": 820000,
+            "confidence": 0.012400060892105103
+        },
+        {
+            "gameTime": "13:56",
+            "label": "Goal",
+            "position": 836000,
+            "confidence": 0.039574239403009415
+        },
+        {
+            "gameTime": "14:08",
+            "label": "Goal",
+            "position": 848000,
+            "confidence": 0.03547612205147743
+        },
+        {
+            "gameTime": "14:19",
+            "label": "Kick-off",
+            "position": 859000,
+            "confidence": 0.04643634334206581
+        },
+        {
+            "gameTime": "14:39",
+            "label": "Kick-off",
+            "position": 879000,
+            "confidence": 0.051928840577602386
+        },
+        {
+            "gameTime": "14:49",
+            "label": "Kick-off",
+            "position": 889000,
+            "confidence": 0.010439843870699406
+        },
+        {
+            "gameTime": "15:11",
+            "label": "Goal",
+            "position": 911000,
+            "confidence": 0.16601476073265076
+        },
+        {
+            "gameTime": "15:28",
+            "label": "Goal",
+            "position": 928000,
+            "confidence": 0.08411383628845215
+        },
+        {
+            "gameTime": "15:53",
+            "label": "Kick-off",
+            "position": 953000,
+            "confidence": 0.08114427328109741
+        },
+        {
+            "gameTime": "16:14",
+            "label": "Kick-off",
+            "position": 974000,
+            "confidence": 0.16735497117042542
+        },
+        {
+            "gameTime": "16:34",
+            "label": "Goal",
+            "position": 994000,
+            "confidence": 0.04754910245537758
+        },
+        {
+            "gameTime": "16:48",
+            "label": "Goal",
+            "position": 1008000,
+            "confidence": 0.3183146119117737
+        },
+        {
+            "gameTime": "17:12",
+            "label": "Kick-off",
+            "position": 1032000,
+            "confidence": 0.09125964343547821
+        },
+        {
+            "gameTime": "17:13",
+            "label": "Goal",
+            "position": 1033000,
+            "confidence": 0.15755058825016022
+        },
+        {
+            "gameTime": "17:30",
+            "label": "Kick-off",
+            "position": 1050000,
+            "confidence": 0.2725951671600342
+        },
+        {
+            "gameTime": "17:44",
+            "label": "Goal",
+            "position": 1064000,
+            "confidence": 0.07283804565668106
+        },
+        {
+            "gameTime": "18:00",
+            "label": "Goal",
+            "position": 1080000,
+            "confidence": 0.14044058322906494
+        },
+        {
+            "gameTime": "18:15",
+            "label": "Kick-off",
+            "position": 1095000,
+            "confidence": 0.22804395854473114
+        },
+        {
+            "gameTime": "18:21",
+            "label": "Goal",
+            "position": 1101000,
+            "confidence": 0.32075682282447815
+        },
+        {
+            "gameTime": "18:35",
+            "label": "Goal",
+            "position": 1115000,
+            "confidence": 0.14101149141788483
+        },
+        {
+            "gameTime": "18:45",
+            "label": "Kick-off",
+            "position": 1125000,
+            "confidence": 0.24982529878616333
+        },
+        {
+            "gameTime": "18:49",
+            "label": "Goal",
+            "position": 1129000,
+            "confidence": 0.15667888522148132
+        },
+        {
+            "gameTime": "19:08",
+            "label": "Goal",
+            "position": 1148000,
+            "confidence": 0.18835757672786713
+        },
+        {
+            "gameTime": "19:35",
+            "label": "Kick-off",
+            "position": 1175000,
+            "confidence": 0.4873201251029968
+        },
+        {
+            "gameTime": "19:38",
+            "label": "Goal",
+            "position": 1178000,
+            "confidence": 0.2431851625442505
+        },
+        {
+            "gameTime": "19:46",
+            "label": "Kick-off",
+            "position": 1186000,
+            "confidence": 0.40504834055900574
+        },
+        {
+            "gameTime": "19:54",
+            "label": "Goal",
+            "position": 1194000,
+            "confidence": 0.39559873938560486
+        },
+        {
+            "gameTime": "20:11",
+            "label": "Goal",
+            "position": 1211000,
+            "confidence": 0.29083722829818726
+        },
+        {
+            "gameTime": "20:32",
+            "label": "Goal",
+            "position": 1232000,
+            "confidence": 0.1750260442495346
+        },
+        {
+            "gameTime": "20:47",
+            "label": "Kick-off",
+            "position": 1247000,
+            "confidence": 0.4477584660053253
+        },
+        {
+            "gameTime": "20:50",
+            "label": "Goal",
+            "position": 1250000,
+            "confidence": 0.2501475512981415
+        },
+        {
+            "gameTime": "21:04",
+            "label": "Goal",
+            "position": 1264000,
+            "confidence": 0.42094188928604126
+        },
+        {
+            "gameTime": "21:07",
+            "label": "Kick-off",
+            "position": 1267000,
+            "confidence": 0.4490962624549866
+        },
+        {
+            "gameTime": "21:24",
+            "label": "Goal",
+            "position": 1284000,
+            "confidence": 0.358222633600235
+        },
+        {
+            "gameTime": "21:34",
+            "label": "Goal",
+            "position": 1294000,
+            "confidence": 0.009191491641104221
+        },
+        {
+            "gameTime": "21:49",
+            "label": "Kick-off",
+            "position": 1309000,
+            "confidence": 0.043965909630060196
+        },
+        {
+            "gameTime": "22:02",
+            "label": "Kick-off",
+            "position": 1322000,
+            "confidence": 0.2637687623500824
+        },
+        {
+            "gameTime": "22:15",
+            "label": "Kick-off",
+            "position": 1335000,
+            "confidence": 0.22491861879825592
+        },
+        {
+            "gameTime": "22:28",
+            "label": "Goal",
+            "position": 1348000,
+            "confidence": 0.2339666336774826
+        },
+        {
+            "gameTime": "22:40",
+            "label": "Goal",
+            "position": 1360000,
+            "confidence": 0.01661643572151661
+        },
+        {
+            "gameTime": "22:46",
+            "label": "Kick-off",
+            "position": 1366000,
+            "confidence": 0.07887561619281769
+        },
+        {
+            "gameTime": "22:56",
+            "label": "Kick-off",
+            "position": 1376000,
+            "confidence": 0.011130228638648987
+        },
+        {
+            "gameTime": "23:06",
+            "label": "Goal",
+            "position": 1386000,
+            "confidence": 0.11203357577323914
+        },
+        {
+            "gameTime": "23:23",
+            "label": "Goal",
+            "position": 1403000,
+            "confidence": 0.10799498111009598
+        },
+        {
+            "gameTime": "23:32",
+            "label": "Kick-off",
+            "position": 1412000,
+            "confidence": 0.10787712037563324
+        },
+        {
+            "gameTime": "23:45",
+            "label": "Kick-off",
+            "position": 1425000,
+            "confidence": 0.24929344654083252
+        },
+        {
+            "gameTime": "23:56",
+            "label": "Kick-off",
+            "position": 1436000,
+            "confidence": 0.15242385864257812
+        },
+        {
+            "gameTime": "24:26",
+            "label": "Goal",
+            "position": 1466000,
+            "confidence": 0.0812506377696991
+        },
+        {
+            "gameTime": "24:45",
+            "label": "Goal",
+            "position": 1485000,
+            "confidence": 0.41150036454200745
+        },
+        {
+            "gameTime": "25:14",
+            "label": "Goal",
+            "position": 1514000,
+            "confidence": 0.0953935980796814
+        },
+        {
+            "gameTime": "25:17",
+            "label": "Kick-off",
+            "position": 1517000,
+            "confidence": 0.4120352864265442
+        },
+        {
+            "gameTime": "25:29",
+            "label": "Kick-off",
+            "position": 1529000,
+            "confidence": 0.21391861140727997
+        },
+        {
+            "gameTime": "25:43",
+            "label": "Goal",
+            "position": 1543000,
+            "confidence": 0.11388269811868668
+        },
+        {
+            "gameTime": "26:01",
+            "label": "Goal",
+            "position": 1561000,
+            "confidence": 0.12967322766780853
+        },
+        {
+            "gameTime": "26:15",
+            "label": "Kick-off",
+            "position": 1575000,
+            "confidence": 0.2442498803138733
+        },
+        {
+            "gameTime": "26:15",
+            "label": "Goal",
+            "position": 1575000,
+            "confidence": 0.0824262946844101
+        },
+        {
+            "gameTime": "26:31",
+            "label": "Goal",
+            "position": 1591000,
+            "confidence": 0.1319265067577362
+        },
+        {
+            "gameTime": "26:40",
+            "label": "Kick-off",
+            "position": 1600000,
+            "confidence": 0.17716117203235626
+        },
+        {
+            "gameTime": "26:49",
+            "label": "Goal",
+            "position": 1609000,
+            "confidence": 0.030428413301706314
+        },
+        {
+            "gameTime": "27:00",
+            "label": "Goal",
+            "position": 1620000,
+            "confidence": 0.1011345311999321
+        },
+        {
+            "gameTime": "27:17",
+            "label": "Goal",
+            "position": 1637000,
+            "confidence": 0.06305737793445587
+        },
+        {
+            "gameTime": "27:22",
+            "label": "Kick-off",
+            "position": 1642000,
+            "confidence": 0.055794596672058105
+        },
+        {
+            "gameTime": "27:43",
+            "label": "Kick-off",
+            "position": 1663000,
+            "confidence": 0.23496748507022858
+        },
+        {
+            "gameTime": "27:56",
+            "label": "Kick-off",
+            "position": 1676000,
+            "confidence": 0.09301449358463287
+        },
+        {
+            "gameTime": "28:26",
+            "label": "Goal",
+            "position": 1706000,
+            "confidence": 0.0042485729791224
+        },
+        {
+            "gameTime": "28:40",
+            "label": "Goal",
+            "position": 1720000,
+            "confidence": 0.14465929567813873
+        },
+        {
+            "gameTime": "28:51",
+            "label": "Goal",
+            "position": 1731000,
+            "confidence": 0.196780726313591
+        },
+        {
+            "gameTime": "29:08",
+            "label": "Goal",
+            "position": 1748000,
+            "confidence": 0.0992964431643486
+        },
+        {
+            "gameTime": "29:30",
+            "label": "Kick-off",
+            "position": 1770000,
+            "confidence": 0.05323001742362976
+        },
+        {
+            "gameTime": "29:47",
+            "label": "Goal",
+            "position": 1787000,
+            "confidence": 0.04994862899184227
+        },
+        {
+            "gameTime": "30:05",
+            "label": "Goal",
+            "position": 1805000,
+            "confidence": 0.0709008052945137
+        },
+        {
+            "gameTime": "30:13",
+            "label": "Kick-off",
+            "position": 1813000,
+            "confidence": 0.10778369754552841
+        },
+        {
+            "gameTime": "30:24",
+            "label": "Kick-off",
+            "position": 1824000,
+            "confidence": 0.09381262958049774
+        },
+        {
+            "gameTime": "30:38",
+            "label": "Kick-off",
+            "position": 1838000,
+            "confidence": 0.15579096972942352
+        },
+        {
+            "gameTime": "30:49",
+            "label": "Kick-off",
+            "position": 1849000,
+            "confidence": 0.23211586475372314
+        },
+        {
+            "gameTime": "31:09",
+            "label": "Goal",
+            "position": 1869000,
+            "confidence": 0.07852444052696228
+        },
+        {
+            "gameTime": "31:32",
+            "label": "Goal",
+            "position": 1892000,
+            "confidence": 0.10002470016479492
+        },
+        {
+            "gameTime": "31:48",
+            "label": "Kick-off",
+            "position": 1908000,
+            "confidence": 0.09873276203870773
+        },
+        {
+            "gameTime": "31:48",
+            "label": "Goal",
+            "position": 1908000,
+            "confidence": 0.0969543531537056
+        },
+        {
+            "gameTime": "32:01",
+            "label": "Kick-off",
+            "position": 1921000,
+            "confidence": 0.06572677940130234
+        },
+        {
+            "gameTime": "32:13",
+            "label": "Kick-off",
+            "position": 1933000,
+            "confidence": 0.028837159276008606
+        },
+        {
+            "gameTime": "32:27",
+            "label": "Goal",
+            "position": 1947000,
+            "confidence": 0.014762802980840206
+        },
+        {
+            "gameTime": "32:38",
+            "label": "Goal",
+            "position": 1958000,
+            "confidence": 0.0527203343808651
+        },
+        {
+            "gameTime": "32:57",
+            "label": "Kick-off",
+            "position": 1977000,
+            "confidence": 0.10365957766771317
+        },
+        {
+            "gameTime": "33:02",
+            "label": "Goal",
+            "position": 1982000,
+            "confidence": 0.0710301548242569
+        },
+        {
+            "gameTime": "33:26",
+            "label": "Kick-off",
+            "position": 2006000,
+            "confidence": 0.01208968460559845
+        },
+        {
+            "gameTime": "33:48",
+            "label": "Kick-off",
+            "position": 2028000,
+            "confidence": 0.018368752673268318
+        },
+        {
+            "gameTime": "34:05",
+            "label": "Kick-off",
+            "position": 2045000,
+            "confidence": 0.03541731834411621
+        },
+        {
+            "gameTime": "34:17",
+            "label": "Kick-off",
+            "position": 2057000,
+            "confidence": 0.12099101394414902
+        },
+        {
+            "gameTime": "34:46",
+            "label": "Kick-off",
+            "position": 2086000,
+            "confidence": 0.010563718155026436
+        },
+        {
+            "gameTime": "35:04",
+            "label": "Goal",
+            "position": 2104000,
+            "confidence": 0.027161646634340286
+        },
+        {
+            "gameTime": "35:24",
+            "label": "Goal",
+            "position": 2124000,
+            "confidence": 0.21459732949733734
+        },
+        {
+            "gameTime": "35:46",
+            "label": "Goal",
+            "position": 2146000,
+            "confidence": 0.07882475852966309
+        },
+        {
+            "gameTime": "36:04",
+            "label": "Kick-off",
+            "position": 2164000,
+            "confidence": 0.04106515645980835
+        },
+        {
+            "gameTime": "36:19",
+            "label": "Kick-off",
+            "position": 2179000,
+            "confidence": 0.22184978425502777
+        },
+        {
+            "gameTime": "36:25",
+            "label": "Goal",
+            "position": 2185000,
+            "confidence": 0.026713402941823006
+        },
+        {
+            "gameTime": "36:51",
+            "label": "Kick-off",
+            "position": 2211000,
+            "confidence": 0.1698380708694458
+        },
+        {
+            "gameTime": "36:53",
+            "label": "Goal",
+            "position": 2213000,
+            "confidence": 0.17091302573680878
+        },
+        {
+            "gameTime": "37:10",
+            "label": "Goal",
+            "position": 2230000,
+            "confidence": 0.23788756132125854
+        },
+        {
+            "gameTime": "37:29",
+            "label": "Goal",
+            "position": 2249000,
+            "confidence": 0.13747704029083252
+        },
+        {
+            "gameTime": "37:49",
+            "label": "Kick-off",
+            "position": 2269000,
+            "confidence": 0.01443338394165039
+        },
+        {
+            "gameTime": "38:08",
+            "label": "Kick-off",
+            "position": 2288000,
+            "confidence": 0.1420769840478897
+        },
+        {
+            "gameTime": "38:17",
+            "label": "Goal",
+            "position": 2297000,
+            "confidence": 0.14912700653076172
+        },
+        {
+            "gameTime": "38:28",
+            "label": "Goal",
+            "position": 2308000,
+            "confidence": 0.0945577323436737
+        },
+        {
+            "gameTime": "38:29",
+            "label": "Kick-off",
+            "position": 2309000,
+            "confidence": 0.07116810977458954
+        },
+        {
+            "gameTime": "38:53",
+            "label": "Kick-off",
+            "position": 2333000,
+            "confidence": 0.055664628744125366
+        },
+        {
+            "gameTime": "39:05",
+            "label": "Goal",
+            "position": 2345000,
+            "confidence": 0.0034511019475758076
+        },
+        {
+            "gameTime": "39:19",
+            "label": "Goal",
+            "position": 2359000,
+            "confidence": 0.06258325278759003
+        },
+        {
+            "gameTime": "39:34",
+            "label": "Goal",
+            "position": 2374000,
+            "confidence": 0.08417601138353348
+        },
+        {
+            "gameTime": "39:41",
+            "label": "Kick-off",
+            "position": 2381000,
+            "confidence": 0.07827884703874588
+        },
+        {
+            "gameTime": "39:48",
+            "label": "Goal",
+            "position": 2388000,
+            "confidence": 0.09269994497299194
+        },
+        {
+            "gameTime": "40:07",
+            "label": "Kick-off",
+            "position": 2407000,
+            "confidence": 0.011456525884568691
+        },
+        {
+            "gameTime": "40:21",
+            "label": "Goal",
+            "position": 2421000,
+            "confidence": 0.013724468648433685
+        },
+        {
+            "gameTime": "40:34",
+            "label": "Goal",
+            "position": 2434000,
+            "confidence": 0.1267312616109848
+        },
+        {
+            "gameTime": "40:49",
+            "label": "Goal",
+            "position": 2449000,
+            "confidence": 0.18865859508514404
+        },
+        {
+            "gameTime": "41:00",
+            "label": "Goal",
+            "position": 2460000,
+            "confidence": 0.3098955750465393
+        },
+        {
+            "gameTime": "41:16",
+            "label": "Kick-off",
+            "position": 2476000,
+            "confidence": 0.2906581461429596
+        },
+        {
+            "gameTime": "41:20",
+            "label": "Goal",
+            "position": 2480000,
+            "confidence": 0.19962455332279205
+        },
+        {
+            "gameTime": "41:31",
+            "label": "Kick-off",
+            "position": 2491000,
+            "confidence": 0.11883149296045303
+        },
+        {
+            "gameTime": "41:47",
+            "label": "Kick-off",
+            "position": 2507000,
+            "confidence": 0.061317574232816696
+        },
+        {
+            "gameTime": "42:05",
+            "label": "Kick-off",
+            "position": 2525000,
+            "confidence": 0.3951374292373657
+        },
+        {
+            "gameTime": "42:14",
+            "label": "Goal",
+            "position": 2534000,
+            "confidence": 0.26379501819610596
+        },
+        {
+            "gameTime": "42:24",
+            "label": "Kick-off",
+            "position": 2544000,
+            "confidence": 0.2421356588602066
+        },
+        {
+            "gameTime": "42:35",
+            "label": "Goal",
+            "position": 2555000,
+            "confidence": 0.16782589256763458
+        },
+        {
+            "gameTime": "42:37",
+            "label": "Kick-off",
+            "position": 2557000,
+            "confidence": 0.03774822875857353
+        },
+        {
+            "gameTime": "42:52",
+            "label": "Kick-off",
+            "position": 2572000,
+            "confidence": 0.013345845974981785
+        },
+        {
+            "gameTime": "43:20",
+            "label": "Kick-off",
+            "position": 2600000,
+            "confidence": 0.17702949047088623
+        },
+        {
+            "gameTime": "43:23",
+            "label": "Goal",
+            "position": 2603000,
+            "confidence": 0.26838451623916626
+        },
+        {
+            "gameTime": "43:36",
+            "label": "Kick-off",
+            "position": 2616000,
+            "confidence": 0.31946370005607605
+        },
+        {
+            "gameTime": "43:51",
+            "label": "Kick-off",
+            "position": 2631000,
+            "confidence": 0.07966253906488419
+        },
+        {
+            "gameTime": "44:04",
+            "label": "Goal",
+            "position": 2644000,
+            "confidence": 0.16995581984519958
+        },
+        {
+            "gameTime": "44:11",
+            "label": "Kick-off",
+            "position": 2651000,
+            "confidence": 0.06449850648641586
+        },
+        {
+            "gameTime": "44:25",
+            "label": "Goal",
+            "position": 2665000,
+            "confidence": 0.12451811134815216
+        },
+        {
+            "gameTime": "44:35",
+            "label": "Goal",
+            "position": 2675000,
+            "confidence": 0.0998663529753685
+        },
+        {
+            "gameTime": "44:51",
+            "label": "Kick-off",
+            "position": 2691000,
+            "confidence": 0.13898682594299316
+        },
+        {
+            "gameTime": "45:02",
+            "label": "Kick-off",
+            "position": 2702000,
+            "confidence": 0.27494820952415466
+        },
+        {
+            "gameTime": "45:12",
+            "label": "Kick-off",
+            "position": 2712000,
+            "confidence": 0.12144377082586288
+        },
+        {
+            "gameTime": "45:24",
+            "label": "Kick-off",
+            "position": 2724000,
+            "confidence": 0.025015372782945633
+        },
+        {
+            "gameTime": "45:53",
+            "label": "Goal",
+            "position": 2753000,
+            "confidence": 0.0380609929561615
+        },
+        {
+            "gameTime": "46:05",
+            "label": "Goal",
+            "position": 2765000,
+            "confidence": 0.10134988278150558
+        },
+        {
+            "gameTime": "46:17",
+            "label": "Goal",
+            "position": 2777000,
+            "confidence": 0.11249853670597076
+        },
+        {
+            "gameTime": "46:35",
+            "label": "Goal",
+            "position": 2795000,
+            "confidence": 0.08424203097820282
+        },
+        {
+            "gameTime": "46:36",
+            "label": "Kick-off",
+            "position": 2796000,
+            "confidence": 0.06437887996435165
+        },
+        {
+            "gameTime": "46:49",
+            "label": "Kick-off",
+            "position": 2809000,
+            "confidence": 0.042454373091459274
+        },
+        {
+            "gameTime": "47:05",
+            "label": "Kick-off",
+            "position": 2825000,
+            "confidence": 0.0016643402632325888
+        },
+        {
+            "gameTime": "47:09",
+            "label": "Goal",
+            "position": 2829000,
+            "confidence": 0.02484447881579399
+        },
+        {
+            "gameTime": "47:29",
+            "label": "Kick-off",
+            "position": 2849000,
+            "confidence": 0.1747482568025589
+        },
+        {
+            "gameTime": "47:30",
+            "label": "Goal",
+            "position": 2850000,
+            "confidence": 0.1614874005317688
+        },
+        {
+            "gameTime": "47:40",
+            "label": "Goal",
+            "position": 2860000,
+            "confidence": 0.10858774185180664
+        },
+        {
+            "gameTime": "47:47",
+            "label": "Kick-off",
+            "position": 2867000,
+            "confidence": 0.1258024126291275
+        },
+        {
+            "gameTime": "48:06",
+            "label": "Goal",
+            "position": 2886000,
+            "confidence": 0.07576358318328857
+        },
+        {
+            "gameTime": "48:09",
+            "label": "Kick-off",
+            "position": 2889000,
+            "confidence": 0.01398718822747469
+        },
+        {
+            "gameTime": "48:29",
+            "label": "Kick-off",
+            "position": 2909000,
+            "confidence": 0.02011122554540634
+        },
+        {
+            "gameTime": "48:47",
+            "label": "Goal",
+            "position": 2927000,
+            "confidence": 0.10042277723550797
+        },
+        {
+            "gameTime": "48:52",
+            "label": "Kick-off",
+            "position": 2932000,
+            "confidence": 0.1164260134100914
+        },
+        {
+            "gameTime": "49:00",
+            "label": "Goal",
+            "position": 2940000,
+            "confidence": 0.2045987993478775
+        },
+        {
+            "gameTime": "49:19",
+            "label": "Goal",
+            "position": 2959000,
+            "confidence": 0.19491924345493317
+        },
+        {
+            "gameTime": "49:33",
+            "label": "Goal",
+            "position": 2973000,
+            "confidence": 0.09749823808670044
+        },
+        {
+            "gameTime": "49:46",
+            "label": "Goal",
+            "position": 2986000,
+            "confidence": 0.2640453279018402
+        },
+        {
+            "gameTime": "50:00",
+            "label": "Goal",
+            "position": 3000000,
+            "confidence": 0.20321330428123474
+        },
+        {
+            "gameTime": "50:19",
+            "label": "Kick-off",
+            "position": 3019000,
+            "confidence": 0.10812053829431534
+        },
+        {
+            "gameTime": "50:31",
+            "label": "Kick-off",
+            "position": 3031000,
+            "confidence": 0.38459691405296326
+        },
+        {
+            "gameTime": "50:42",
+            "label": "Kick-off",
+            "position": 3042000,
+            "confidence": 0.19612489640712738
+        },
+        {
+            "gameTime": "51:05",
+            "label": "Goal",
+            "position": 3065000,
+            "confidence": 0.09889709204435349
+        },
+        {
+            "gameTime": "51:22",
+            "label": "Goal",
+            "position": 3082000,
+            "confidence": 0.08476321399211884
+        },
+        {
+            "gameTime": "51:43",
+            "label": "Goal",
+            "position": 3103000,
+            "confidence": 0.08010544627904892
+        },
+        {
+            "gameTime": "51:49",
+            "label": "Kick-off",
+            "position": 3109000,
+            "confidence": 0.11857790499925613
+        },
+        {
+            "gameTime": "52:10",
+            "label": "Kick-off",
+            "position": 3130000,
+            "confidence": 0.14935225248336792
+        },
+        {
+            "gameTime": "52:20",
+            "label": "Goal",
+            "position": 3140000,
+            "confidence": 0.004002596251666546
+        },
+        {
+            "gameTime": "52:44",
+            "label": "Goal",
+            "position": 3164000,
+            "confidence": 0.15219074487686157
+        },
+        {
+            "gameTime": "52:55",
+            "label": "Goal",
+            "position": 3175000,
+            "confidence": 0.23188167810440063
+        },
+        {
+            "gameTime": "53:10",
+            "label": "Kick-off",
+            "position": 3190000,
+            "confidence": 0.11691515147686005
+        },
+        {
+            "gameTime": "53:20",
+            "label": "Goal",
+            "position": 3200000,
+            "confidence": 0.17141836881637573
+        },
+        {
+            "gameTime": "53:30",
+            "label": "Kick-off",
+            "position": 3210000,
+            "confidence": 0.13579516112804413
+        },
+        {
+            "gameTime": "53:44",
+            "label": "Goal",
+            "position": 3224000,
+            "confidence": 0.024507055059075356
+        },
+        {
+            "gameTime": "53:50",
+            "label": "Kick-off",
+            "position": 3230000,
+            "confidence": 0.005179250612854958
+        },
+        {
+            "gameTime": "54:00",
+            "label": "Goal",
+            "position": 3240000,
+            "confidence": 0.0211563128978014
+        },
+        {
+            "gameTime": "54:05",
+            "label": "Kick-off",
+            "position": 3245000,
+            "confidence": 0.08716099709272385
+        },
+        {
+            "gameTime": "54:18",
+            "label": "Kick-off",
+            "position": 3258000,
+            "confidence": 0.04464304819703102
+        },
+        {
+            "gameTime": "54:29",
+            "label": "Kick-off",
+            "position": 3269000,
+            "confidence": 0.11147180199623108
+        },
+        {
+            "gameTime": "54:48",
+            "label": "Kick-off",
+            "position": 3288000,
+            "confidence": 0.0057508572936058044
+        },
+        {
+            "gameTime": "55:08",
+            "label": "Goal",
+            "position": 3308000,
+            "confidence": 0.0006730711902491748
+        },
+        {
+            "gameTime": "55:25",
+            "label": "Goal",
+            "position": 3325000,
+            "confidence": 0.28500258922576904
+        },
+        {
+            "gameTime": "55:37",
+            "label": "Goal",
+            "position": 3337000,
+            "confidence": 0.17471818625926971
+        },
+        {
+            "gameTime": "55:52",
+            "label": "Goal",
+            "position": 3352000,
+            "confidence": 0.04844954237341881
+        },
+        {
+            "gameTime": "56:03",
+            "label": "Goal",
+            "position": 3363000,
+            "confidence": 0.043154314160346985
+        },
+        {
+            "gameTime": "56:19",
+            "label": "Kick-off",
+            "position": 3379000,
+            "confidence": 0.11334767937660217
+        },
+        {
+            "gameTime": "56:30",
+            "label": "Goal",
+            "position": 3390000,
+            "confidence": 0.014657750725746155
+        },
+        {
+            "gameTime": "56:43",
+            "label": "Goal",
+            "position": 3403000,
+            "confidence": 0.050416719168424606
+        },
+        {
+            "gameTime": "56:48",
+            "label": "Kick-off",
+            "position": 3408000,
+            "confidence": 0.06795947253704071
+        },
+        {
+            "gameTime": "56:55",
+            "label": "Goal",
+            "position": 3415000,
+            "confidence": 0.10670124739408493
+        },
+        {
+            "gameTime": "57:07",
+            "label": "Goal",
+            "position": 3427000,
+            "confidence": 0.07193370163440704
+        },
+        {
+            "gameTime": "57:10",
+            "label": "Kick-off",
+            "position": 3430000,
+            "confidence": 0.05302019789814949
+        },
+        {
+            "gameTime": "57:29",
+            "label": "Goal",
+            "position": 3449000,
+            "confidence": 0.03970250114798546
+        },
+        {
+            "gameTime": "57:30",
+            "label": "Kick-off",
+            "position": 3450000,
+            "confidence": 0.005370438098907471
+        },
+        {
+            "gameTime": "57:44",
+            "label": "Goal",
+            "position": 3464000,
+            "confidence": 0.0007798065780662
+        },
+        {
+            "gameTime": "57:59",
+            "label": "Goal",
+            "position": 3479000,
+            "confidence": 0.05488577112555504
+        },
+        {
+            "gameTime": "58:16",
+            "label": "Goal",
+            "position": 3496000,
+            "confidence": 0.06317006051540375
+        },
+        {
+            "gameTime": "58:31",
+            "label": "Goal",
+            "position": 3511000,
+            "confidence": 0.09524095058441162
+        },
+        {
+            "gameTime": "58:33",
+            "label": "Kick-off",
+            "position": 3513000,
+            "confidence": 0.05212751775979996
+        },
+        {
+            "gameTime": "58:53",
+            "label": "Kick-off",
+            "position": 3533000,
+            "confidence": 0.005268313456326723
+        },
+        {
+            "gameTime": "59:07",
+            "label": "Kick-off",
+            "position": 3547000,
+            "confidence": 8.100084960460663e-05
+        },
+        {
+            "gameTime": "59:18",
+            "label": "Goal",
+            "position": 3558000,
+            "confidence": 0.12965506315231323
+        },
+        {
+            "gameTime": "59:31",
+            "label": "Goal",
+            "position": 3571000,
+            "confidence": 0.09926798194646835
+        },
+        {
+            "gameTime": "59:47",
+            "label": "Goal",
+            "position": 3587000,
+            "confidence": 0.06991548091173172
+        },
+        {
+            "gameTime": "60:06",
+            "label": "Kick-off",
+            "position": 3606000,
+            "confidence": 0.028600789606571198
+        },
+        {
+            "gameTime": "60:27",
+            "label": "Goal",
+            "position": 3627000,
+            "confidence": 0.030080309137701988
+        },
+        {
+            "gameTime": "60:39",
+            "label": "Goal",
+            "position": 3639000,
+            "confidence": 0.032696183770895004
+        },
+        {
+            "gameTime": "60:43",
+            "label": "Kick-off",
+            "position": 3643000,
+            "confidence": 0.05054600536823273
+        },
+        {
+            "gameTime": "60:58",
+            "label": "Kick-off",
+            "position": 3658000,
+            "confidence": 0.08438923954963684
+        },
+        {
+            "gameTime": "61:11",
+            "label": "Kick-off",
+            "position": 3671000,
+            "confidence": 0.10135722160339355
+        },
+        {
+            "gameTime": "61:30",
+            "label": "Kick-off",
+            "position": 3690000,
+            "confidence": 0.04553612694144249
+        },
+        {
+            "gameTime": "61:54",
+            "label": "Goal",
+            "position": 3714000,
+            "confidence": 0.07987654209136963
+        },
+        {
+            "gameTime": "62:05",
+            "label": "Goal",
+            "position": 3725000,
+            "confidence": 0.0848710909485817
+        },
+        {
+            "gameTime": "62:21",
+            "label": "Goal",
+            "position": 3741000,
+            "confidence": 0.06401780992746353
+        },
+        {
+            "gameTime": "62:31",
+            "label": "Kick-off",
+            "position": 3751000,
+            "confidence": 0.06190204247832298
+        },
+        {
+            "gameTime": "62:52",
+            "label": "Kick-off",
+            "position": 3772000,
+            "confidence": 0.056879568845033646
+        },
+        {
+            "gameTime": "63:09",
+            "label": "Kick-off",
+            "position": 3789000,
+            "confidence": 0.0003439979627728462
+        },
+        {
+            "gameTime": "63:28",
+            "label": "Goal",
+            "position": 3808000,
+            "confidence": 0.10190075635910034
+        },
+        {
+            "gameTime": "63:41",
+            "label": "Goal",
+            "position": 3821000,
+            "confidence": 0.11712959408760071
+        },
+        {
+            "gameTime": "63:51",
+            "label": "Goal",
+            "position": 3831000,
+            "confidence": 0.06800038367509842
+        },
+        {
+            "gameTime": "64:07",
+            "label": "Goal",
+            "position": 3847000,
+            "confidence": 0.031168213114142418
+        },
+        {
+            "gameTime": "64:19",
+            "label": "Kick-off",
+            "position": 3859000,
+            "confidence": 0.014405486173927784
+        },
+        {
+            "gameTime": "64:38",
+            "label": "Goal",
+            "position": 3878000,
+            "confidence": 0.0629694014787674
+        },
+        {
+            "gameTime": "64:50",
+            "label": "Goal",
+            "position": 3890000,
+            "confidence": 0.08189675211906433
+        },
+        {
+            "gameTime": "65:00",
+            "label": "Goal",
+            "position": 3900000,
+            "confidence": 0.07149101793766022
+        },
+        {
+            "gameTime": "65:09",
+            "label": "Kick-off",
+            "position": 3909000,
+            "confidence": 0.082918681204319
+        },
+        {
+            "gameTime": "65:31",
+            "label": "Kick-off",
+            "position": 3931000,
+            "confidence": 0.02983812429010868
+        },
+        {
+            "gameTime": "65:48",
+            "label": "Goal",
+            "position": 3948000,
+            "confidence": 0.11891137808561325
+        },
+        {
+            "gameTime": "66:02",
+            "label": "Goal",
+            "position": 3962000,
+            "confidence": 0.09505442529916763
+        },
+        {
+            "gameTime": "66:20",
+            "label": "Goal",
+            "position": 3980000,
+            "confidence": 0.09188328683376312
+        },
+        {
+            "gameTime": "66:28",
+            "label": "Kick-off",
+            "position": 3988000,
+            "confidence": 0.14836981892585754
+        },
+        {
+            "gameTime": "66:39",
+            "label": "Kick-off",
+            "position": 3999000,
+            "confidence": 0.23103481531143188
+        },
+        {
+            "gameTime": "67:06",
+            "label": "Goal",
+            "position": 4026000,
+            "confidence": 0.19696684181690216
+        },
+        {
+            "gameTime": "67:21",
+            "label": "Goal",
+            "position": 4041000,
+            "confidence": 0.06699076294898987
+        },
+        {
+            "gameTime": "67:36",
+            "label": "Kick-off",
+            "position": 4056000,
+            "confidence": 0.033569443970918655
+        },
+        {
+            "gameTime": "67:39",
+            "label": "Goal",
+            "position": 4059000,
+            "confidence": 0.037394486367702484
+        },
+        {
+            "gameTime": "67:48",
+            "label": "Kick-off",
+            "position": 4068000,
+            "confidence": 0.09363892674446106
+        },
+        {
+            "gameTime": "68:01",
+            "label": "Kick-off",
+            "position": 4081000,
+            "confidence": 0.509922981262207
+        },
+        {
+            "gameTime": "68:20",
+            "label": "Goal",
+            "position": 4100000,
+            "confidence": 0.00014602957526221871
+        },
+        {
+            "gameTime": "68:34",
+            "label": "Goal",
+            "position": 4114000,
+            "confidence": 0.020703230053186417
+        },
+        {
+            "gameTime": "68:53",
+            "label": "Goal",
+            "position": 4133000,
+            "confidence": 0.16869616508483887
+        },
+        {
+            "gameTime": "69:12",
+            "label": "Goal",
+            "position": 4152000,
+            "confidence": 0.1331549733877182
+        },
+        {
+            "gameTime": "69:50",
+            "label": "Kick-off",
+            "position": 4190000,
+            "confidence": 0.012244060635566711
+        },
+        {
+            "gameTime": "70:05",
+            "label": "Kick-off",
+            "position": 4205000,
+            "confidence": 0.19511888921260834
+        },
+        {
+            "gameTime": "70:15",
+            "label": "Kick-off",
+            "position": 4215000,
+            "confidence": 0.07014832645654678
+        },
+        {
+            "gameTime": "70:28",
+            "label": "Kick-off",
+            "position": 4228000,
+            "confidence": 0.034433312714099884
+        },
+        {
+            "gameTime": "70:41",
+            "label": "Kick-off",
+            "position": 4241000,
+            "confidence": 0.0067889997735619545
+        },
+        {
+            "gameTime": "71:10",
+            "label": "Goal",
+            "position": 4270000,
+            "confidence": 0.11963771283626556
+        },
+        {
+            "gameTime": "71:28",
+            "label": "Goal",
+            "position": 4288000,
+            "confidence": 0.06002233177423477
+        },
+        {
+            "gameTime": "71:40",
+            "label": "Goal",
+            "position": 4300000,
+            "confidence": 0.033148907124996185
+        },
+        {
+            "gameTime": "71:49",
+            "label": "Kick-off",
+            "position": 4309000,
+            "confidence": 0.04519921913743019
+        },
+        {
+            "gameTime": "71:51",
+            "label": "Goal",
+            "position": 4311000,
+            "confidence": 0.04655023664236069
+        },
+        {
+            "gameTime": "72:00",
+            "label": "Kick-off",
+            "position": 4320000,
+            "confidence": 0.033474601805210114
+        },
+        {
+            "gameTime": "72:14",
+            "label": "Kick-off",
+            "position": 4334000,
+            "confidence": 0.06178363412618637
+        },
+        {
+            "gameTime": "72:23",
+            "label": "Goal",
+            "position": 4343000,
+            "confidence": 0.0007536310004070401
+        },
+        {
+            "gameTime": "72:49",
+            "label": "Goal",
+            "position": 4369000,
+            "confidence": 0.2335882931947708
+        },
+        {
+            "gameTime": "73:01",
+            "label": "Goal",
+            "position": 4381000,
+            "confidence": 0.22857457399368286
+        },
+        {
+            "gameTime": "73:11",
+            "label": "Goal",
+            "position": 4391000,
+            "confidence": 0.15492963790893555
+        },
+        {
+            "gameTime": "73:21",
+            "label": "Goal",
+            "position": 4401000,
+            "confidence": 0.057792313396930695
+        },
+        {
+            "gameTime": "73:44",
+            "label": "Kick-off",
+            "position": 4424000,
+            "confidence": 0.006416333373636007
+        },
+        {
+            "gameTime": "73:59",
+            "label": "Kick-off",
+            "position": 4439000,
+            "confidence": 0.07069138437509537
+        },
+        {
+            "gameTime": "74:11",
+            "label": "Kick-off",
+            "position": 4451000,
+            "confidence": 0.10574840009212494
+        },
+        {
+            "gameTime": "74:42",
+            "label": "Kick-off",
+            "position": 4482000,
+            "confidence": 0.0015383631689473987
+        },
+        {
+            "gameTime": "74:57",
+            "label": "Kick-off",
+            "position": 4497000,
+            "confidence": 0.002555974293500185
+        },
+        {
+            "gameTime": "75:08",
+            "label": "Goal",
+            "position": 4508000,
+            "confidence": 0.017222756519913673
+        },
+        {
+            "gameTime": "75:31",
+            "label": "Goal",
+            "position": 4531000,
+            "confidence": 0.039011117070913315
+        },
+        {
+            "gameTime": "75:55",
+            "label": "Goal",
+            "position": 4555000,
+            "confidence": 0.03260869160294533
+        },
+        {
+            "gameTime": "76:25",
+            "label": "Kick-off",
+            "position": 4585000,
+            "confidence": 0.002082930179312825
+        },
+        {
+            "gameTime": "76:25",
+            "label": "Goal",
+            "position": 4585000,
+            "confidence": 0.018433276563882828
+        },
+        {
+            "gameTime": "76:49",
+            "label": "Kick-off",
+            "position": 4609000,
+            "confidence": 0.01238126028329134
+        },
+        {
+            "gameTime": "76:50",
+            "label": "Goal",
+            "position": 4610000,
+            "confidence": 0.008975506760179996
+        },
+        {
+            "gameTime": "76:59",
+            "label": "Kick-off",
+            "position": 4619000,
+            "confidence": 0.010534721426665783
+        },
+        {
+            "gameTime": "77:12",
+            "label": "Goal",
+            "position": 4632000,
+            "confidence": 0.010989382863044739
+        },
+        {
+            "gameTime": "77:27",
+            "label": "Kick-off",
+            "position": 4647000,
+            "confidence": 0.008362521417438984
+        },
+        {
+            "gameTime": "77:49",
+            "label": "Goal",
+            "position": 4669000,
+            "confidence": 0.010697653517127037
+        },
+        {
+            "gameTime": "78:02",
+            "label": "Goal",
+            "position": 4682000,
+            "confidence": 0.14849308133125305
+        },
+        {
+            "gameTime": "78:13",
+            "label": "Goal",
+            "position": 4693000,
+            "confidence": 0.277388334274292
+        },
+        {
+            "gameTime": "78:21",
+            "label": "Kick-off",
+            "position": 4701000,
+            "confidence": 0.1128259226679802
+        },
+        {
+            "gameTime": "78:26",
+            "label": "Goal",
+            "position": 4706000,
+            "confidence": 0.14170177280902863
+        },
+        {
+            "gameTime": "78:38",
+            "label": "Kick-off",
+            "position": 4718000,
+            "confidence": 0.08912760019302368
+        },
+        {
+            "gameTime": "78:56",
+            "label": "Kick-off",
+            "position": 4736000,
+            "confidence": 0.05801652744412422
+        },
+        {
+            "gameTime": "79:01",
+            "label": "Goal",
+            "position": 4741000,
+            "confidence": 0.08872008323669434
+        },
+        {
+            "gameTime": "79:17",
+            "label": "Goal",
+            "position": 4757000,
+            "confidence": 0.13019458949565887
+        },
+        {
+            "gameTime": "79:29",
+            "label": "Goal",
+            "position": 4769000,
+            "confidence": 0.054448701441287994
+        },
+        {
+            "gameTime": "79:35",
+            "label": "Kick-off",
+            "position": 4775000,
+            "confidence": 0.09370657056570053
+        },
+        {
+            "gameTime": "79:46",
+            "label": "Kick-off",
+            "position": 4786000,
+            "confidence": 0.12737920880317688
+        },
+        {
+            "gameTime": "80:06",
+            "label": "Kick-off",
+            "position": 4806000,
+            "confidence": 0.3682790994644165
+        },
+        {
+            "gameTime": "80:25",
+            "label": "Goal",
+            "position": 4825000,
+            "confidence": 0.039507344365119934
+        },
+        {
+            "gameTime": "80:42",
+            "label": "Goal",
+            "position": 4842000,
+            "confidence": 0.04354100674390793
+        },
+        {
+            "gameTime": "80:52",
+            "label": "Goal",
+            "position": 4852000,
+            "confidence": 0.04274106025695801
+        },
+        {
+            "gameTime": "81:06",
+            "label": "Goal",
+            "position": 4866000,
+            "confidence": 0.07315527647733688
+        },
+        {
+            "gameTime": "81:09",
+            "label": "Kick-off",
+            "position": 4869000,
+            "confidence": 0.06702496856451035
+        },
+        {
+            "gameTime": "81:29",
+            "label": "Kick-off",
+            "position": 4889000,
+            "confidence": 0.0202610082924366
+        },
+        {
+            "gameTime": "81:39",
+            "label": "Kick-off",
+            "position": 4899000,
+            "confidence": 0.00909888744354248
+        },
+        {
+            "gameTime": "81:57",
+            "label": "Goal",
+            "position": 4917000,
+            "confidence": 0.31408825516700745
+        },
+        {
+            "gameTime": "82:08",
+            "label": "Goal",
+            "position": 4928000,
+            "confidence": 0.5209535360336304
+        },
+        {
+            "gameTime": "82:21",
+            "label": "Goal",
+            "position": 4941000,
+            "confidence": 0.20010820031166077
+        },
+        {
+            "gameTime": "82:42",
+            "label": "Kick-off",
+            "position": 4962000,
+            "confidence": 0.5261711478233337
+        },
+        {
+            "gameTime": "82:54",
+            "label": "Kick-off",
+            "position": 4974000,
+            "confidence": 0.1217878982424736
+        },
+        {
+            "gameTime": "83:12",
+            "label": "Goal",
+            "position": 4992000,
+            "confidence": 0.10441568493843079
+        },
+        {
+            "gameTime": "83:30",
+            "label": "Kick-off",
+            "position": 5010000,
+            "confidence": 0.2478325068950653
+        },
+        {
+            "gameTime": "83:40",
+            "label": "Goal",
+            "position": 5020000,
+            "confidence": 0.25592052936553955
+        },
+        {
+            "gameTime": "83:42",
+            "label": "Kick-off",
+            "position": 5022000,
+            "confidence": 0.4151206314563751
+        },
+        {
+            "gameTime": "83:51",
+            "label": "Goal",
+            "position": 5031000,
+            "confidence": 0.25160151720046997
+        },
+        {
+            "gameTime": "84:01",
+            "label": "Goal",
+            "position": 5041000,
+            "confidence": 0.07133525609970093
+        },
+        {
+            "gameTime": "84:09",
+            "label": "Kick-off",
+            "position": 5049000,
+            "confidence": 0.03470669686794281
+        },
+        {
+            "gameTime": "84:23",
+            "label": "Goal",
+            "position": 5063000,
+            "confidence": 0.041516389697790146
+        },
+        {
+            "gameTime": "84:38",
+            "label": "Goal",
+            "position": 5078000,
+            "confidence": 0.09322604537010193
+        },
+        {
+            "gameTime": "84:47",
+            "label": "Kick-off",
+            "position": 5087000,
+            "confidence": 0.05505360662937164
+        },
+        {
+            "gameTime": "84:59",
+            "label": "Kick-off",
+            "position": 5099000,
+            "confidence": 0.14011190831661224
+        },
+        {
+            "gameTime": "85:20",
+            "label": "Kick-off",
+            "position": 5120000,
+            "confidence": 0.45501503348350525
+        },
+        {
+            "gameTime": "85:52",
+            "label": "Goal",
+            "position": 5152000,
+            "confidence": 0.08464355021715164
+        },
+        {
+            "gameTime": "86:06",
+            "label": "Goal",
+            "position": 5166000,
+            "confidence": 0.1738138645887375
+        },
+        {
+            "gameTime": "86:20",
+            "label": "Goal",
+            "position": 5180000,
+            "confidence": 0.2394256740808487
+        },
+        {
+            "gameTime": "86:33",
+            "label": "Goal",
+            "position": 5193000,
+            "confidence": 0.12626734375953674
+        },
+        {
+            "gameTime": "86:43",
+            "label": "Goal",
+            "position": 5203000,
+            "confidence": 0.03890980780124664
+        },
+        {
+            "gameTime": "87:03",
+            "label": "Goal",
+            "position": 5223000,
+            "confidence": 0.012883235700428486
+        },
+        {
+            "gameTime": "87:23",
+            "label": "Goal",
+            "position": 5243000,
+            "confidence": 0.2715654969215393
+        },
+        {
+            "gameTime": "87:37",
+            "label": "Goal",
+            "position": 5257000,
+            "confidence": 0.33320650458335876
+        },
+        {
+            "gameTime": "87:40",
+            "label": "Kick-off",
+            "position": 5260000,
+            "confidence": 0.43357956409454346
+        },
+        {
+            "gameTime": "88:00",
+            "label": "Kick-off",
+            "position": 5280000,
+            "confidence": 0.25425344705581665
+        },
+        {
+            "gameTime": "88:10",
+            "label": "Kick-off",
+            "position": 5290000,
+            "confidence": 0.054991867393255234
+        },
+        {
+            "gameTime": "88:26",
+            "label": "Kick-off",
+            "position": 5306000,
+            "confidence": 0.03319740295410156
+        },
+        {
+            "gameTime": "88:49",
+            "label": "Goal",
+            "position": 5329000,
+            "confidence": 0.2697282135486603
+        },
+        {
+            "gameTime": "88:51",
+            "label": "Kick-off",
+            "position": 5331000,
+            "confidence": 0.2612447142601013
+        },
+        {
+            "gameTime": "89:04",
+            "label": "Kick-off",
+            "position": 5344000,
+            "confidence": 0.18239782750606537
+        },
+        {
+            "gameTime": "89:09",
+            "label": "Goal",
+            "position": 5349000,
+            "confidence": 0.3081194758415222
+        },
+        {
+            "gameTime": "89:31",
+            "label": "Goal",
+            "position": 5371000,
+            "confidence": 0.14888586103916168
+        },
+        {
+            "gameTime": "89:50",
+            "label": "Goal",
+            "position": 5390000,
+            "confidence": 0.06256037205457687
+        },
+        {
+            "gameTime": "90:04",
+            "label": "Goal",
+            "position": 5404000,
+            "confidence": 0.19643723964691162
+        },
+        {
+            "gameTime": "90:14",
+            "label": "Kick-off",
+            "position": 5414000,
+            "confidence": 0.4075855612754822
+        },
+        {
+            "gameTime": "90:28",
+            "label": "Kick-off",
+            "position": 5428000,
+            "confidence": 0.2992067039012909
+        },
+        {
+            "gameTime": "90:33",
+            "label": "Goal",
+            "position": 5433000,
+            "confidence": 0.09755250811576843
+        },
+        {
+            "gameTime": "90:45",
+            "label": "Goal",
+            "position": 5445000,
+            "confidence": 0.02894677221775055
+        },
+        {
+            "gameTime": "91:12",
+            "label": "Goal",
+            "position": 5472000,
+            "confidence": 0.13650710880756378
+        },
+        {
+            "gameTime": "91:32",
+            "label": "Goal",
+            "position": 5492000,
+            "confidence": 0.281351774930954
+        },
+        {
+            "gameTime": "91:56",
+            "label": "Kick-off",
+            "position": 5516000,
+            "confidence": 0.1791658103466034
+        },
+        {
+            "gameTime": "92:02",
+            "label": "Goal",
+            "position": 5522000,
+            "confidence": 0.17554697394371033
+        },
+        {
+            "gameTime": "92:14",
+            "label": "Kick-off",
+            "position": 5534000,
+            "confidence": 0.1358811855316162
+        },
+        {
+            "gameTime": "92:30",
+            "label": "Kick-off",
+            "position": 5550000,
+            "confidence": 0.06541382521390915
+        },
+        {
+            "gameTime": "92:40",
+            "label": "Kick-off",
+            "position": 5560000,
+            "confidence": 0.03606326878070831
+        },
+        {
+            "gameTime": "92:55",
+            "label": "Kick-off",
+            "position": 5575000,
+            "confidence": 0.015778131783008575
+        },
+        {
+            "gameTime": "93:15",
+            "label": "Kick-off",
+            "position": 5595000,
+            "confidence": 0.016484826803207397
+        },
+        {
+            "gameTime": "93:48",
+            "label": "Kick-off",
+            "position": 5628000,
+            "confidence": 0.0024692288134247065
+        },
+        {
+            "gameTime": "93:57",
+            "label": "Goal",
+            "position": 5637000,
+            "confidence": 0.05985188111662865
+        },
+        {
+            "gameTime": "94:11",
+            "label": "Goal",
+            "position": 5651000,
+            "confidence": 0.23036345839500427
+        },
+        {
+            "gameTime": "94:30",
+            "label": "Goal",
+            "position": 5670000,
+            "confidence": 0.1335267424583435
+        },
+        {
+            "gameTime": "94:42",
+            "label": "Goal",
+            "position": 5682000,
+            "confidence": 0.06355931609869003
+        },
+        {
+            "gameTime": "94:54",
+            "label": "Kick-off",
+            "position": 5694000,
+            "confidence": 0.024107089266180992
+        },
+        {
+            "gameTime": "95:03",
+            "label": "Goal",
+            "position": 5703000,
+            "confidence": 0.024315427988767624
+        },
+        {
+            "gameTime": "95:07",
+            "label": "Kick-off",
+            "position": 5707000,
+            "confidence": 0.010524715296924114
+        },
+        {
+            "gameTime": "95:19",
+            "label": "Goal",
+            "position": 5719000,
+            "confidence": 0.19132080674171448
+        },
+        {
+            "gameTime": "95:29",
+            "label": "Goal",
+            "position": 5729000,
+            "confidence": 0.14113689959049225
+        },
+        {
+            "gameTime": "95:51",
+            "label": "Kick-off",
+            "position": 5751000,
+            "confidence": 0.10362985730171204
+        },
+        {
+            "gameTime": "95:54",
+            "label": "Goal",
+            "position": 5754000,
+            "confidence": 0.09242751449346542
+        },
+        {
+            "gameTime": "96:14",
+            "label": "Kick-off",
+            "position": 5774000,
+            "confidence": 0.2126019299030304
+        },
+        {
+            "gameTime": "96:28",
+            "label": "Goal",
+            "position": 5788000,
+            "confidence": 0.02919943816959858
+        },
+        {
+            "gameTime": "96:43",
+            "label": "Goal",
+            "position": 5803000,
+            "confidence": 0.34085169434547424
+        },
+        {
+            "gameTime": "96:55",
+            "label": "Goal",
+            "position": 5815000,
+            "confidence": 0.3168492019176483
+        },
+        {
+            "gameTime": "97:08",
+            "label": "Goal",
+            "position": 5828000,
+            "confidence": 0.11926975101232529
+        },
+        {
+            "gameTime": "97:11",
+            "label": "Kick-off",
+            "position": 5831000,
+            "confidence": 0.21342329680919647
+        },
+        {
+            "gameTime": "97:22",
+            "label": "Kick-off",
+            "position": 5842000,
+            "confidence": 0.3939574360847473
+        },
+        {
+            "gameTime": "97:53",
+            "label": "Kick-off",
+            "position": 5873000,
+            "confidence": 0.07636384665966034
+        },
+        {
+            "gameTime": "98:06",
+            "label": "Kick-off",
+            "position": 5886000,
+            "confidence": 0.3290404677391052
+        },
+        {
+            "gameTime": "98:06",
+            "label": "Goal",
+            "position": 5886000,
+            "confidence": 0.24613119661808014
+        },
+        {
+            "gameTime": "98:18",
+            "label": "Goal",
+            "position": 5898000,
+            "confidence": 0.306715190410614
+        },
+        {
+            "gameTime": "98:31",
+            "label": "Goal",
+            "position": 5911000,
+            "confidence": 0.30996838212013245
+        },
+        {
+            "gameTime": "98:48",
+            "label": "Goal",
+            "position": 5928000,
+            "confidence": 0.040708962827920914
+        },
+        {
+            "gameTime": "98:59",
+            "label": "Kick-off",
+            "position": 5939000,
+            "confidence": 0.0191371850669384
+        },
+        {
+            "gameTime": "99:21",
+            "label": "Kick-off",
+            "position": 5961000,
+            "confidence": 0.48353081941604614
+        },
+        {
+            "gameTime": "99:28",
+            "label": "Goal",
+            "position": 5968000,
+            "confidence": 0.2751569151878357
+        },
+        {
+            "gameTime": "99:38",
+            "label": "Kick-off",
+            "position": 5978000,
+            "confidence": 0.2977091670036316
+        },
+        {
+            "gameTime": "99:47",
+            "label": "Goal",
+            "position": 5987000,
+            "confidence": 0.35806000232696533
+        },
+        {
+            "gameTime": "99:49",
+            "label": "Kick-off",
+            "position": 5989000,
+            "confidence": 0.28373637795448303
+        },
+        {
+            "gameTime": "100:02",
+            "label": "Goal",
+            "position": 6002000,
+            "confidence": 0.06930761784315109
+        },
+        {
+            "gameTime": "100:15",
+            "label": "Kick-off",
+            "position": 6015000,
+            "confidence": 0.029063448309898376
+        },
+        {
+            "gameTime": "100:25",
+            "label": "Kick-off",
+            "position": 6025000,
+            "confidence": 0.012447413988411427
+        },
+        {
+            "gameTime": "100:46",
+            "label": "Kick-off",
+            "position": 6046000,
+            "confidence": 0.13329727947711945
+        },
+        {
+            "gameTime": "100:55",
+            "label": "Goal",
+            "position": 6055000,
+            "confidence": 0.16324348747730255
+        },
+        {
+            "gameTime": "101:05",
+            "label": "Kick-off",
+            "position": 6065000,
+            "confidence": 0.07220257818698883
+        },
+        {
+            "gameTime": "101:07",
+            "label": "Goal",
+            "position": 6067000,
+            "confidence": 0.05853762850165367
+        },
+        {
+            "gameTime": "101:29",
+            "label": "Goal",
+            "position": 6089000,
+            "confidence": 0.10651843249797821
+        },
+        {
+            "gameTime": "101:45",
+            "label": "Goal",
+            "position": 6105000,
+            "confidence": 0.30278483033180237
+        },
+        {
+            "gameTime": "101:56",
+            "label": "Goal",
+            "position": 6116000,
+            "confidence": 0.2889220416545868
+        },
+        {
+            "gameTime": "102:09",
+            "label": "Goal",
+            "position": 6129000,
+            "confidence": 0.21863599121570587
+        },
+        {
+            "gameTime": "102:29",
+            "label": "Goal",
+            "position": 6149000,
+            "confidence": 0.07376688718795776
+        },
+        {
+            "gameTime": "102:38",
+            "label": "Kick-off",
+            "position": 6158000,
+            "confidence": 0.00654564006254077
+        }
+    ]
+}

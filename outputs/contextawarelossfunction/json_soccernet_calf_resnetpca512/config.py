@@ -1,0 +1,148 @@
+classes = [
+    'Kick-off',
+    'Goal',
+]
+contextaware_cfg = dict(
+    lambda_neg=0.25,
+    lambda_pos=2.0,
+    lambda_reg=0.5,
+    neg_radius=9,
+    normalize=True,
+    pos_radius=3)
+dataset = dict(
+    extract_fps=2,
+    input_fps=25,
+    test=dict(
+        chunk_size=120,
+        chunks_per_epoch=6000,
+        classes=[
+            'Goal',
+            'Kick-off',
+        ],
+        data_root='/workspace/datasets/spotting-OSL/ResNET_PCA512/test',
+        dataloader=dict(
+            batch_size=1, num_workers=1, pin_memory=True, shuffle=False),
+        extract_fps=2,
+        framerate=1,
+        input_fps=25,
+        metric='loose',
+        path='/datasets/spotting-OSL/ResNET_PCA512/test_annotations.json',
+        receptive_field=40,
+        results='results_spotting_test',
+        type='FeatureVideosChunksfromJson'),
+    train=dict(
+        chunk_size=120,
+        chunks_per_epoch=6000,
+        classes=[
+            'Goal',
+            'Kick-off',
+        ],
+        data_root='/workspace/datasets/spotting-OSL/ResNET_PCA512/train',
+        dataloader=dict(
+            batch_size=256, num_workers=4, pin_memory=True, shuffle=True),
+        extract_fps=2,
+        framerate=1,
+        input_fps=25,
+        path='/datasets/spotting-OSL/ResNET_PCA512/train_annotations.json',
+        receptive_field=40,
+        type='FeatureClipChunksfromJson'),
+    valid=dict(
+        chunk_size=120,
+        chunks_per_epoch=6000,
+        classes=[
+            'Goal',
+            'Kick-off',
+        ],
+        data_root='/workspace/datasets/spotting-OSL/ResNET_PCA512/valid',
+        dataloader=dict(
+            batch_size=256, num_workers=4, pin_memory=True, shuffle=True),
+        extract_fps=2,
+        framerate=1,
+        input_fps=25,
+        path='/datasets/spotting-OSL/ResNET_PCA512/valid_annotations.json',
+        receptive_field=40,
+        type='FeatureClipChunksfromJson'))
+log_level = 'INFO'
+model = dict(
+    backbone=dict(
+        encoder='ResNET_TF2_PCA512',
+        feature_dim=512,
+        framerate=1,
+        output_dim=512,
+        type='PreExtactedFeatures'),
+    head=dict(
+        chunk_size=120,
+        dim_capsule=16,
+        num_classes=2,
+        num_detections=15,
+        num_layers=2,
+        type='SpottingCALF'),
+    load_weights=None,
+    neck=dict(
+        chunk_size=120,
+        dim_capsule=16,
+        framerate=1,
+        input_size=512,
+        num_classes=2,
+        num_detections=15,
+        receptive_field=40,
+        type='CNN++'),
+    type='ContextAware')
+runner = dict(type='runner_JSON')
+training = dict(
+    GPU=0,
+    batch_size=64,
+    criterion=dict(
+        loss_1=dict(
+            K=[
+                [
+                    -90,
+                    -49,
+                ],
+                [
+                    -49,
+                    -50,
+                ],
+                [
+                    49,
+                    50,
+                ],
+                [
+                    90,
+                    100,
+                ],
+            ],
+            framerate=2,
+            hit_radius=0.1,
+            miss_radius=0.9,
+            neg_radius=9,
+            pos_radius=3,
+            type='ContextAwareLoss'),
+        loss_2=dict(lambda_coord=5.0, lambda_noobj=0.5, type='SpottingLoss'),
+        type='Combined2x',
+        w_1=0.000367,
+        w_2=1.0),
+    evaluation_frequency=1000,
+    framerate=2,
+    max_epochs=200,
+    optimizer=dict(
+        amsgrad=False,
+        betas=(
+            0.9,
+            0.999,
+        ),
+        eps=1e-07,
+        lr=0.001,
+        type='Adam',
+        weight_decay=0),
+    scheduler=dict(
+        LR=0.001,
+        LRe=1e-06,
+        mode='min',
+        patience=25,
+        type='ReduceLROnPlateau',
+        verbose=True),
+    type='trainer_CALF')
+visualizer = dict(
+    annotation_range=5000, scale=1, seconds_to_skip=20, threshold=0.0)
+work_dir = 'outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512'
