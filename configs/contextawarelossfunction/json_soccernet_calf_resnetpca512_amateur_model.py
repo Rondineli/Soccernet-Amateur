@@ -1,32 +1,5 @@
-#_base_ = [
-#    #"../_base_/datasets/json/features_clips_CALF.py",  # dataset config
-#    #"../_base_/models/contextawarelossfunction.py",  # model config
-#    "../_base_/schedules/calf_1000_adam.py" # trainer config
-#]
-
 work_dir = "outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512_amateur_model"
 cut_classes = ["Kick-off", "Goal"]
-#classes=cut_classes
-classes = [
-    "Penalty",
-    "Kick-off",
-    "Goal",
-    "Substitution",
-    "Offside",
-    "Shots on target",
-    "Shots off target",
-    "Clearance",
-    "Ball out of play",
-    "Throw-in",
-    "Foul",
-    "Indirect free-kick",
-    "Direct free-kick",
-    "Corner",
-    "Yellow card",
-    "Red card",
-    "Yellow->red card",
-]
-
 classes=cut_classes
 data_root = "/workspace/datasets/amateur-dataset/"
 
@@ -87,9 +60,6 @@ dataset = dict(
 
 model = dict(
     type='ContextAware',
-    #load_weights=None,
-    #load_from="outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512/model.pth.tar",
-    #load_weights="outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512/model.pth.tar",
     load_weights="/OSL-ActionSpotting-orig/outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512/model.pth.tar",
     reset_head=True,
     freeze_backbone=False,
@@ -116,33 +86,13 @@ model = dict(
         num_detections=15,
         num_layers=2,
         chunk_size=120),
-    # post_proc=dict(
-    #     type="NMS",
-    #     NMS_window=30,
-    #     NMS_threshold=0.0),
 )
-
-#contextaware_cfg = dict(
-#    pos_radius=3,       # frames; default is often too small (1)
-#    neg_radius=9,       # frames; increases tolerance to temporal jitter
-#    lambda_reg=0.5,     # regularization to reduce overfitting
-#    lambda_neg=0.25,    # reduce penalty of negatives (important for rare events)
-#    lambda_pos=2.0,     # emphasize positives (especially rare events)
-#    normalize=True,
-#)
 
 runner = dict(
     type="runner_JSON"
 )
 
-
 log_level = "DEBUG"  # The level of logging
-
-
-#optimizer = dict(type="Adam", lr=1e-4)
-#optimizer = dict(type="Adam", lr=1e-3)
-#scheduler = dict(type="ReduceLROnPlateau", patience=30)
-#evaluation_frequency = 20
 
 training = dict(
     type="trainer_CALF",
@@ -194,5 +144,3 @@ training = dict(
         verbose=True,
     ),
 )
-
-#runner = dict(type="runner_JSON")
