@@ -58,6 +58,11 @@ dataset = dict(
     ),
 )
 
+# Model definition for new amateur dataset model transfer-learning
+# This model defines the CALF model convos definitions, loading pre-trained
+# SoccerNet model with professional broadcast
+# Freezing backbone and neck, so the new model can learn new cue and features
+# BackBone, neck and head, remains same config with only 2 classes (Goal, and Kick-off)
 model = dict(
     type='ContextAware',
     load_weights=None,

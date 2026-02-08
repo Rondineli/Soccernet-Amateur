@@ -58,9 +58,15 @@ dataset = dict(
     ),
 )
 
+# Model definition for new amateur dataset model transfer-learning
+# This model defines the CALF model convos definitions, loading pre-trained
+# SoccerNet model with professional broadcast
+# Freezing backbone and neck, so the new model can learn new cue and features
+# BackBone, neck and head, remains same config with only 2 classes (Goal, and Kick-off)
+calf_soccernet_professional = "/OSL-ActionSpotting-orig/outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512/model.pth.tar"
 model = dict(
     type='ContextAware',
-    load_weights="/OSL-ActionSpotting-orig/outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512/model.pth.tar",
+    load_weights=calf_soccernet_professional,
     reset_head=True,
     freeze_backbone=False,
     reset_neck=True,
@@ -69,7 +75,8 @@ model = dict(
         encoder='ResNET_TF2_PCA512',
         feature_dim=512,
         output_dim=512,
-        framerate=2),
+        framerate=2
+    ),
     neck=dict(
         type='CNN++',
         input_size=512,
@@ -78,14 +85,16 @@ model = dict(
         dim_capsule=16,
         receptive_field=40,
         num_detections=15,
-        framerate=2),
+        framerate=2
+    ),
     head=dict(
         type='SpottingCALF',
         num_classes=2,
         dim_capsule=16,
         num_detections=15,
         num_layers=2,
-        chunk_size=120),
+        chunk_size=120
+    ),
 )
 
 runner = dict(
@@ -101,18 +110,12 @@ training = dict(
     framerate=2,
     batch_size=32,
     GPU=0,
+    # Combined CALF and Spotting Action backbones/models.
     criterion = dict(
         type="Combined2x",
-        #w_1 = 0.000367,
         w_1=0.5,
         loss_1 = dict(
             type="ContextAwareLoss",
-            #K=[[-100, -98, -20, -40, -96, -5, -8, -93, -99, -31, -75, -10, -97, -75, -20, -84, -18],
-            #[-50, -49, -10, -20, -48, -3, -4, -46, -50, -15, -37, -5, -49, -38, -10, -42, -9],
-            #[50, 49, 60, 10, 48, 3, 4, 46, 50, 15, 37, 5, 49, 38, 10, 42, 9],
-            #[100, 98, 90, 20, 96, 5, 8, 93, 99, 31, 75, 10, 97, 75, 20, 84, 18]],
-            #K=[[-100, -100], [-50, -50], [50, 50], [100, 100]],
-            #K = [[-10,  -100], [-5,-50], [5, 50], [ 10, 100]],
             K=[[-15, -120], [-6,  -60],[6,   60],[15,  120]],
             framerate=2,
             pos_radius=4,
@@ -127,6 +130,7 @@ training = dict(
             lambda_noobj=0.5
         ),
     ),
+    # Adam optimizer with weight decay
     optimizer = dict(
         type="Adam",
         lr=1e-3,
@@ -135,6 +139,7 @@ training = dict(
         weight_decay=0,
         amsgrad=False
     ),
+    # Scheduler with Reduce on Plateau
     scheduler=dict(
         type="ReduceLROnPlateau",
         mode="min",
