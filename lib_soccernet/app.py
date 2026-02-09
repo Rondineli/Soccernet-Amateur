@@ -195,7 +195,8 @@ def execute_split_and_upload(data: dict, yt_id: str, id_file: str, model_config:
         video_id=yt_id,
         data=data,
         id_file=id_file,
-        model_config=model_config
+        model_config=model_config,
+        save_status=save_status
     )
     data["phase_4_status"] = "completed"
     save_status(data, id_file)
@@ -230,7 +231,7 @@ def get_download_status(file_name: str) -> jsonify:
     return jsonify(data)
 
 
-@app.rout('/benchmark')
+@app.route('/benchmark')
 def execute_benchmark() -> jsonify:
     """
     Execute shell script containing mAP@5s and mAP@10s for each of model config

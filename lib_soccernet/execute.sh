@@ -1,7 +1,3 @@
-"""
-Bash script to execute inference script to
-retrieve a given spotted actions from a given video id based on config parameter
-"""
 #!/usr/bin/env bash
 
 set -ex

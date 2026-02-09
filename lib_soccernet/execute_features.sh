@@ -1,7 +1,3 @@
-"""
-Feature extraction PCA bash script - this is the handler execution for running OSL-ActionSpotting
-feature extraction tool to convert .mp4 or .mkv assets into .npy (PCA) 512 dimensions
-"""
 #!/usr/bin/env bash
 
 
