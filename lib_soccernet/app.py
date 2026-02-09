@@ -298,6 +298,7 @@ def download_youtube(yt_id):
                 #   * and a prior inference already ran status
                 del data["phase_3_status"]
                 del data["phase_4_status"]
+                data["status"] = "started"
             except:
                 pass
 
