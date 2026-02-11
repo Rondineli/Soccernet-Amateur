@@ -1,3 +1,4 @@
+import re
 import os
 import boto3
 
@@ -51,3 +52,34 @@ def upload_s3_object(file_object: str, file_name: str, s3_bucket: str) -> dict:
     except ClientError as e:
         return {"err": str(e)}
     return response
+
+
+def interpret_table_output(output: str) -> dict:
+    """
+                   Any    Visible    Unseen
+    -----------  -----  ---------  --------
+    Goal          7.62       8.73         0
+    Kick-off      4.48       4.48         0
+    Average mAP   6.05       6.6          0
+    """
+    pattern = re.compile(
+        r"^(?P<label>[A-Za-z\- ]+?)\s+"
+        r"(?P<any>\d+(?:\.\d+)?)\s+"
+        r"(?P<visible>\d+(?:\.\d+)?)\s+"
+        r"(?P<unseen>\d+(?:\.\d+)?)$",
+        re.MULTILINE
+    )
+
+    results = [
+        {
+            "label": m.group("label").strip(),
+            "Any": float(m.group("any")),
+            "Visible": float(m.group("visible")),
+            "Unseen": float(m.group("unseen")),
+        }
+        for m in pattern.finditer(output)
+    ]
+    print(f"Output: {output}\n\n\n")
+    print(f"Rrsult => {results}\n")
+
+    return results

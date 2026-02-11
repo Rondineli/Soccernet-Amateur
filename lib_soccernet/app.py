@@ -1,3 +1,4 @@
+import copy
 import json
 import subprocess
 import threading
@@ -7,7 +8,7 @@ import yt_dlp
 from flask import Flask, request, jsonify, redirect
 from pathlib import Path
 from split_video import execute_split_and_save
-from utils import normalize_id
+from utils import normalize_id, interpret_table_output
 
 app = Flask(__name__)
 
@@ -153,7 +154,9 @@ def execute_inference(yt_id: str, annotation_file: str, data: dict, model_config
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             cwd="/OSL-ActionSpotting",
-            env=os.environ.copy()
+            env=os.environ.copy(),
+            text=True,
+            bufsize=1
         )
         process.wait()
         if process.returncode == 0:
@@ -237,7 +240,49 @@ def execute_benchmark() -> jsonify:
     Execute shell script containing mAP@5s and mAP@10s for each of model config
     trained and saved for this study
     """
-    return Exception("NotImplementedErrorYet")
+    _outputs = {}
+
+    _params = [
+        "bash",
+        "./evaluate.sh",
+        "2000"
+    ]
+
+    for metric in ["loose", "tight"]:
+        for key, value in MODEL_CONFIGS.items():
+            params = copy.deepcopy(_params)
+            params.append(metric)
+            params.insert(2, value)
+            print(f"Executing: .... {' '.join(params)}")
+            process = subprocess.Popen(
+                params,
+                stdout=subprocess.PIPE,
+                stderr=subprocess.STDOUT,
+                cwd="/OSL-ActionSpotting",
+                env=os.environ.copy(),
+                text=True,
+                bufsize=1
+            )
+
+            output_lines = []
+
+            for line in process.stdout:
+                print(f"L => {line}", end="")      # live output
+                output_lines.append(line)
+
+            process.wait()
+            if process.returncode == 0:
+                print(output_lines)
+                r = interpret_table_output(" ".join(output_lines))
+                print(f"output: {r}")
+                if _outputs.get(key):
+                    _outputs[key][metric] = r
+                else:
+                    _outputs[key] = {metric: r}
+            else:
+                print(f"Error to process output: {process.returncode} => {process.stdout.read()}")
+    print(f"Returning metrics outputs: {_outputs}")
+    return jsonify(_outputs)
 
 
 @app.route("/<yt_id>/")
