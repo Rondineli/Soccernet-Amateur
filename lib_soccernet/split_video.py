@@ -64,7 +64,10 @@ def split_video_ffmpeg(input_path: str, kick_off: str, output_base: str, suffix:
         "-preset", "veryfast",
         output_file
     ]
+
+    print(f"Executing: {' '.join(cmd)}")
     print(f"{input_path} clip for {start_sec} saved in {output_file}")
+    print(f"Executing.... {subprocess.run(cmd, capture_output=True, text=True)}")
 
 
 def execute_split_and_save(
@@ -90,15 +93,16 @@ def execute_split_and_save(
             label = event["label"]
             confidence = event["confidence"]
             kick_off = prediction_window_mmss(timestamp)
+            suffix = f"l:{label}_s:{kick_off}_c:{confidence}"
             split_video_ffmpeg(
                 input_raw_video,
                 kick_off,
                 f"./outputs/{video_id}",
-                suffix=f"{label}_{kick_off}"
+                suffix=suffix
             )
 
             video_path = Path(input_raw_video)
-            file_name = f"cut_{label}_{kick_off}_{video_path.stem}{video_path.suffix}"
+            file_name = f"cut_{suffix}_{video_path.stem}{video_path.suffix}"
             base_path = f"./outputs/{video_id}"
 
             output_file = os.path.join(base_path, file_name)

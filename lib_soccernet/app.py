@@ -1,17 +1,21 @@
 import copy
 import json
+import re
 import subprocess
 import threading
 import os
 import yt_dlp
 
-from flask import Flask, request, jsonify, redirect
+from flask import Flask, request, jsonify, redirect, abort
 from pathlib import Path
 from split_video import execute_split_and_save
 from utils import normalize_id, interpret_table_output
 
+
 app = Flask(__name__)
 
+
+BASE_DIR = Path("/datasets/amateur").resolve()
 DPATH_JSON_DATASET = os.path.join("/datasets/amateur/", "download")
 DBASE_PATH_JSON = "/tmp/download_id_status/"
 DEFAULT_CONFIG = "configs/contextawarelossfunction/json_soccernet_calf_resnetpca512_amateur_model_st_2.py"
@@ -26,6 +30,53 @@ MODEL_CONFIGS = {
 
 os.makedirs(DBASE_PATH_JSON, exist_ok=True)
 
+
+def download_post_hook(status: str) -> None:
+    """
+    Hook to be executed once video is downloaded
+    """
+    print(f"Final status => {status}")
+    status_download = status.get("status")
+    raw_video_id = status.get("info_dict", {}).get("id")
+    id_file = raw_video_id
+    id_file = os.path.join(DBASE_PATH_JSON, normalize_id(id_file))
+    id_file = f"{id_file}.json"
+    file_download_name = f"{DEFAULT_DATASET_DIR}download/{raw_video_id}/{raw_video_id}.mp4"
+
+    db = {}
+
+    try:
+
+        with open(id_file, "r") as f:
+            db = json.loads(f.read())
+    except:
+        # if file does not exists, we should create a new one at the end
+        # this is needed in case the download video already exists
+        # but we need restart the process - bypassing the download the file again
+        pass
+    
+    # if this model config inference is not already present
+    # we should restart the phases controlers to process a new 
+    # inference with a new model for an already downloaded video and 
+    # pca extracted, meaning, we should re-start from step 3 forward
+    try:
+        # if this key does not exists, it is fine, we should move on
+        # it should delete only if:
+        #   * the new inference is not in the json file
+        #   * and a prior inference already ran status
+        db["status"] = "started"
+        del db["phase_3_status"]
+        del db["phase_4_status"]
+    except:
+        pass
+    
+    db["file_location"] = file_download_name
+    db["phase_1_status"] = status_download
+    db["filename"] = id_file
+    db["phase"] = 1
+
+    with open(id_file, "w") as f:
+        json.dump(db, f)
 
 def download_ph_hook(status: dict) -> None:
     """
@@ -69,10 +120,12 @@ def start_download(url: str) -> None:
         "merge_output_format": "mp4",
         "outtmpl": f"{DEFAULT_DATASET_DIR}download/%(id)s/%(id)s.%(ext)s",
         "progress_hooks": [download_ph_hook],
+        "postprocessor_hook": [download_post_hook]
     }
 
     with yt_dlp.YoutubeDL(ydl_opts) as ydl:
         ydl.add_progress_hook(download_ph_hook)
+        ydl.add_postprocessor_hook(download_post_hook)
         ydl.download([url])
 
 
@@ -234,18 +287,46 @@ def get_download_status(file_name: str) -> jsonify:
     return jsonify(data)
 
 
+@app.route('/json/amateur/benchmark/<file_name>/')
+def retrieve_json_benchmark(file_name: str):
+
+    # Only allow safe filenames (optional but recommended)
+    if not re.match(r'^[a-zA-Z0-9_-]+$', file_name):
+        abort(400, description="Invalid file name")
+
+    requested_path = (BASE_DIR / f"{file_name}.json").resolve()
+
+    # Ensure the resolved path is inside BASE_DIR
+    if not str(requested_path).startswith(str(BASE_DIR)):
+        print(f"Aborted Access denied: {requested_path}")
+        abort(403, description="Access denied")
+
+    if not requested_path.exists():
+        print(f"404 Not found: {requested_path}")
+        abort(404, description="File not found")
+
+    with open(requested_path, "r") as f:
+        rsp = json.load(f)
+
+    return jsonify(rsp)
+
+
 @app.route('/benchmark')
 def execute_benchmark() -> jsonify:
     """
     Execute shell script containing mAP@5s and mAP@10s for each of model config
     trained and saved for this study
     """
+
+    annotation = request.args.get("annotation", "/datasets/amateur/test_annotations.json")
+
     _outputs = {}
 
     _params = [
         "bash",
         "./evaluate.sh",
-        "2000"
+        "2000",
+        annotation
     ]
 
     for metric in ["loose", "tight"]:
@@ -286,7 +367,7 @@ def execute_benchmark() -> jsonify:
 
 
 @app.route("/<yt_id>/")
-def download_youtube(yt_id):
+def download_youtube(yt_id: str):
     """ 
     Method route to download youtube video using yt-dl
 
