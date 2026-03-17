@@ -9,7 +9,7 @@ dataset = dict(
     train=dict(
         type="FeatureClipChunksfromJson",
         path="/workspace/datasets/amateur-dataset/train/annotations.json",
-        data_root="/workspace/datasets/amateur-dataset/", #"/home/ybenzakour/datasets/SoccerNet/",
+        data_root="/workspace/datasets/amateur-dataset/",
         framerate=2,
         chunk_size=120,
         receptive_field=40,
@@ -101,7 +101,7 @@ runner = dict(
     type="runner_JSON"
 )
 
-log_level = "DEBUG"  # The level of logging
+log_level = "DEBUG"
 
 training = dict(
     type="trainer_CALF",

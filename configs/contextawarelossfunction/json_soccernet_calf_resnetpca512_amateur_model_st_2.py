@@ -1,4 +1,5 @@
 work_dir = "outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512_amateur_model"
+
 cut_classes = ["Kick-off", "Goal"]
 classes=cut_classes
 data_root = "/workspace/datasets/amateur-dataset/"
@@ -92,8 +93,7 @@ runner = dict(
     type="runner_JSON"
 )
 
-
-log_level = "DEBUG"  # The level of logging
+log_level = "DEBUG"
 
 training = dict(
     type="trainer_CALF",
@@ -104,15 +104,9 @@ training = dict(
     GPU=0,
     criterion = dict(
         type="Combined2x",
-        #w_1 = 0.000367,
         w_1=0.5,
         loss_1 = dict(
             type="ContextAwareLoss",
-            #K=[[-100, -98, -20, -40, -96, -5, -8, -93, -99, -31, -75, -10, -97, -75, -20, -84, -18],
-            #[-50, -49, -10, -20, -48, -3, -4, -46, -50, -15, -37, -5, -49, -38, -10, -42, -9],
-            #[50, 49, 60, 10, 48, 3, 4, 46, 50, 15, 37, 5, 49, 38, 10, 42, 9],
-            #[100, 98, 90, 20, 96, 5, 8, 93, 99, 31, 75, 10, 97, 75, 20, 84, 18]],
-            #K=[[-100, -100], [-50, -50], [50, 50], [100, 100]],
             K = [[-10,  -100], [-5,-50], [5, 50], [ 10, 100]],
             #K=[[-15, -120], [-6,  -60],[6,   60],[15,  120]],
             framerate=2,
@@ -145,5 +139,3 @@ training = dict(
         verbose=True,
     ),
 )
-
-#runner = dict(type="runner_JSON")

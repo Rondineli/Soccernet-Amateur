@@ -1,3 +1,7 @@
+"""
+CALF model from OSL-Action - source: https://github.com/OpenSportsLab/OSL-ActionSpotting/blob/main/configs/contextawarelossfunction/json_soccernet_calf_resnetpca512.py
+Adapted to load only 2 label classes: Kick-off and Goal
+"""
 _base_ = [
     "../_base_/datasets/json/features_clips_CALF.py",  # dataset config
     "../_base_/models/contextawarelossfunction.py",  # model config
