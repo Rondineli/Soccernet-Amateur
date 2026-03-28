@@ -13,18 +13,18 @@ work_dir = "outputs/contextawarelossfunction/json_soccernet_calf_resnetpca512"
 dataset = dict(
     train=dict(
         path=[
-            "/home/ybenzakour/datasets/SoccerNet/JSON/ResNET_PCA512/train/annotations.json"
+            "/workspace/datasets/spotting-OSL/ResNET_PCA512/train/annotations.json"
         ],
         data_root=["/home/ybenzakour/datasets/SoccerNet/"],
-        classes = ["Goal", "Kick-off"]
+        classes = ["Kick-off", "Goal"]
     ),
     valid=dict(
-        path="/home/ybenzakour/datasets/SoccerNet/JSON/ResNET_PCA512/valid/annotations.json",
-        classes = ["Goal", "Kick-off"]
+        path="/workspace/datasets/spotting-OSL/ResNET_PCA512/valid/annotations.json",
+        classes = ["Kick-off", "Goal"]
     ),
     test=dict(
-        path="/home/ybenzakour/datasets/SoccerNet/JSON/ResNET_PCA512/test/annotations.json",
-        classes = ["Goal", "Kick-off"]
+        path="/workspace/datasets/spotting-OSL/ResNET_PCA512/test/annotations.json",
+        classes = ["Kick-off", "Goal"]
     ),
 )
 log_level = "INFO"  # The level of logging
@@ -34,6 +34,6 @@ runner = dict(type="runner_JSON")
 visualizer = dict(
     threshold=0.0,
     annotation_range=5000,  # ms
-    seconds_to_skip=20,
-    scale=1,
+    seconds_to_skip=30,
+    scale=1.5,
 )
